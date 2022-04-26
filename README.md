@@ -1,7 +1,8 @@
 # Project-POO
 Final Project to the project POO
-#Technologies
+
+# Technologies
 1. Java
 
-#Recomendation
+# Recomendation
 1. Don't touch the brach "Master"
