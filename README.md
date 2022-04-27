@@ -1,5 +1,5 @@
 # Project-POO
-Final Project to the project POO
+Final Project POO
 
 # Technologies
 1. Java
