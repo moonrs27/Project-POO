@@ -11,4 +11,5 @@ Final Project POO
 ![Captura de pantalla de 2022-04-27 19-31-00](https://user-images.githubusercontent.com/77118215/165653481-412d81cd-8d4a-4290-84a2-cf173725c55f.png)
 
 # Clone the project
-git@github.com:martin0123478/Project-POO.git
+git remote git@github.com:martin0123478/Project-POO.git
+
