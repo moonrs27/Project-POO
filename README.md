@@ -3,6 +3,7 @@ Final Project POO
 
 # Technologies
 1. Java
+2. Umbrello
 
 # Recomendation
 1. Don't touch the branch "Master"
