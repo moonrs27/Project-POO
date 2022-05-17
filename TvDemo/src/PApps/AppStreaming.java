@@ -8,7 +8,7 @@ import PApps.App;
 /**
  * Class StreamingApp
  */
-public class AppStreaming extends App {
+public class AppStreaming extends Thread {
 
   //
   // Fields
@@ -23,7 +23,12 @@ public class AppStreaming extends App {
   //
   // Methods
   //
-
+  @Override
+     public void run() {
+         System.out.println("Iniciando la intefaz de la APP");
+         
+         
+     }
 
   //
   // Accessor methods
@@ -32,5 +37,12 @@ public class AppStreaming extends App {
   //
   // Other methods
   //
+    private void esperarXsegundos(int segundos) {
+	try {
+            Thread.sleep(segundos * 1000);
+	} catch (InterruptedException ex) {
+            Thread.currentThread().interrupt();
+	}
+    } 
 
 }
