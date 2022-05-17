@@ -107,5 +107,8 @@ public class Dimension {
   //
   // Other methods
   //
+  public void cambiarMedida(){
+      
+  }
 
 }
