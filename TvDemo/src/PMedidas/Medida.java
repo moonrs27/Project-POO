@@ -6,6 +6,11 @@ package PMedidas;
  * Class Medida
  */
 abstract public class Medida {
+ //David Abner Bautista Ayala
+ boolean comapre (Medida m){
+  return this.getClass().equals(m.getClass());
+ }
+  
 
   //
   // Fields
