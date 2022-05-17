@@ -9,7 +9,7 @@ TV
 # Recomendation
 1. Don't touch the branch "Master"
 
-# Curso de GitHub en Español
+# Curso Basico de GitHub en Español
 https://www.facebook.com/110070638026943/videos/996942490936956
 
 
