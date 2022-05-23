@@ -3,12 +3,23 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package prueba_tvdemo;
+package prueba_tvdemo; //paquete de prueba
 
-import javax.swing.*;
+import javax.swing.*; 
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.JLayeredPane;
+
+/*
+MONTSERRAT ROJAS SANTILLAN
+los paquetes swing y awt ayudan a las interfaces (clases abstractas) a crear botones con textos
+imagenes y cuadros graficos para mostrar su funcionamiento en la pantalla
+- para tener eventos especificos en las clases abstractas utilizamos los eventos de java (event), porque de esta manera
+se podra utilizar el uso del raton o de una pestaña extra en dado caso que se desee utilizar.
+- por otra parte, el metodo JLayeredPane es un contenedor java que admite otros componente, su funcionamiento se basa en
+que situa los componentes de una clase, metodo y/u objeti en capas, de forma que se superponen unos sobre otros sin eliminar
+los demás
+/**
 /**
  *
  * @author alanm
