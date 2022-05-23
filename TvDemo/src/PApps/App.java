@@ -3,12 +3,22 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package prueba_tvdemo;
+package prueba_tvdemo; //paquete de prueba
 
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.JLayeredPane;
+/*
+MONTSERRAT ROJAS SANTILLAN
+los paquetes swing y awt ayudan a las interfaces (clases abstractas) a crear botones con textos
+imagenes y cuadros graficos para mostrar su funcionamiento en la pantalla
+- para tener eventos especificos en las clases abstractas utilizamos los eventos de java (event), porque de esta manera
+se podra utilizar el uso del raton o de una pestaña extra en dado caso que se desee utilizar.
+- por otra parte, el metodo JLayeredPane es un contenedor java que admite otros componentes; su funcionamiento se basa en
+que situa los componentes de una clase, metodo y/u objeto en capas, de forma que se superponen unos sobre otros sin eliminar
+los demás
+/**
 /**
  *
  * @author alanm
@@ -26,7 +36,13 @@ public class App extends JFrame implements ActionListener{
         colocarBase();
         accionStream();
     }
-
+/*
+MONTSERRAT ROJAS SANTILLAN
+esta clase nos permite crear los botones de manera privada ya que no se accionaran hasta que se haga alguna accion
+permitida, ya sea por medio de la tecla de un boton, un clic del raton etc; los botones se refieren a la transmision de la
+imagen o video, el reproductor de audio o musica, las imagenes/emoticones para el menu, el volumen, los canales y la configuracion.
+por ultimo se avanza a la capa 2 en donde se colocara el boton, la base y el poder realizar la transmision
+*/
     
     private void specsBoton(){
         Stream = new JButton();
