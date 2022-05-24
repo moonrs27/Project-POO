@@ -1,115 +1,69 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package prueba_tvdemo;
+package PApps;
 
-import javax.swing.*;
-import java.awt.*;
-import java.awt.event.*;
-import javax.swing.JLayeredPane;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import javax.swing.JButton;
+
+
 /**
- *
- * @author alanm
+ * Class App
  */
+public class App implements ActionListener {
+    AppStreaming stream;
+    AppMusica music;
+    Acciones hacer;
+  //
+  // Fields
+  //
 
-//implements ActionListener
-public class App extends JFrame implements ActionListener{
-    private JButton Stream;
-    private JButton Music;
-    private ImageIcon todo1;
-    private ImageIcon todo2;
-    private JLayeredPane capa2;
+
+  
+  //
+  // Constructors
+  //
+  //
     public App(){
-        specsBoton();
-        colocarBase();
-        accionStream();
     }
+    
+    public App(AppStreaming a, Acciones b){
+        this.stream = a;
+        this.hacer = b;
+    }
+    
+    public App(AppMusica c, Acciones b){
+        this.music = c;
+        this.hacer = b;
+    }
+    
+    
+  
+  //
+  // Methods
+  //
+    
 
-    
-    private void specsBoton(){
-        Stream = new JButton();
-        
-        
-        this.Stream.setVisible(true);
-        todo1 = new ImageIcon("video-stream.png");
-        Stream.setOpaque(true);
-        Stream.setBackground(Color.DARK_GRAY);
-        Stream.setBounds(110,195,110,210);
-        
-        Stream.setIcon(new ImageIcon(todo1.getImage().getScaledInstance(120,100,Image.SCALE_SMOOTH) ) );
-       // Stream.setVisible(true);
-//Stream.setActionCommand("Video");
-        
-        Music = new JButton();
-        todo2 = new ImageIcon("music.png");
-        Music.setOpaque(true);
-        Music.setBackground(Color.DARK_GRAY);
-        Music.setBounds(220,195,110,210);
-        this.Music.setVisible(true);
-        Music.setIcon(new ImageIcon(todo2.getImage().getScaledInstance(120,100,Image.SCALE_SMOOTH) ) );
-        //Music.setActionCommand("Sonido");
-        
-    }
-    
-     private void colocarBase(){
-        capa2 = new JLayeredPane();
-        capa2.setOpaque(true);
-        capa2.setBackground(Color.GREEN);
-        
-        capa2.add(Stream,Integer.valueOf(3));
-        capa2.add(Music,Integer.valueOf(3));
-        this.add(capa2);
-    }
-    
-    
-    public void Abrir(){
-        
-        
-        
-        /*System.out.println("Llego a las APPs");
-        SubInterfaz Primventana;
-        Primventana = new SubInterfaz("Video","Musica");*/
-        /*AppStreaming Stream = new AppStreaming();
-        AppMusica Music = new AppMusica();
-        
-        if(this.Estado == false && this.nombreApp == "Stream"){
-         Stream.start();
-       }else{
-         Music.start();
-         
-        
-        } */  
-        
-    }
+  //
+  // Accessor methods
+  //
 
-    
-    /*public void clicEnBoton(ActionEvent e) {
-        System.out.println("Activo una App");
-    }*/
-    
-    private void accionStream(){
-        Music.addActionListener(this);
-    }
 
-    /*@Override
+  //
+  // Other methods
+  //
+    @Override
     public void actionPerformed(ActionEvent e) {
-        if ("Video".equals(e.getActionCommand())) {
+        System.out.println("Esta en la activacion de APPs");
+        //System.out.println("El valor de APP en activacion: "+e.getActionCommand());
+        if ("Stream".equals(e.getActionCommand())) {
             
             System.out.println("Activo la App Stream");
+            stream.abrir();
             
-        }else if ("Sonido".equals(e.getActionCommand())) {
-            
+        }else if ("Musica".equals(e.getActionCommand())) {
+            music.abrir();
             System.out.println("Activo la App Musica");
 	
         }
-    }*/
-
-    @Override
-    public void actionPerformed(ActionEvent e) {
-        System.out.println("Entro a ejecucion");
     }
-    
-    
+
 }
