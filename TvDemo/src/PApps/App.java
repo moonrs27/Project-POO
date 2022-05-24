@@ -9,6 +9,13 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.JLayeredPane;
+/*
+MONTSERRAT ROJAS SANTILLAN
+los metodos swing y awt nos ayudan a crear botones en las intefaces (o clases abstractas) ya sean de texto, imagen, iconos
+etc; estos nos ayudaran a crear nuevas pestañas para mostrar las operaciones de la television.
+para que el kit de herramientas awt tenga mas opciones, se pueden utilizar los eventos para facilitar los cambios 
+que se hagan dentro de las clases abstractas
+*/
 /**
  *
  * @author alanm
@@ -26,8 +33,11 @@ public class App extends JFrame implements ActionListener{
         colocarBase();
         accionStream();
     }
+/*	
+MONTSERRAT ROJAS SANTILLAN
 
-    
+*/
+
     private void specsBoton(){
         Stream = new JButton();
         
@@ -53,6 +63,10 @@ public class App extends JFrame implements ActionListener{
         
     }
     
+/*
+
+*/
+	
      private void colocarBase(){
         capa2 = new JLayeredPane();
         capa2.setOpaque(true);
